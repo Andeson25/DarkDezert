@@ -1,0 +1,109 @@
+html, body {
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.image {
+    transition: opacity 2s linear;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+
+.image:nth-child(1) {
+    background-image: url("./assets/1.jpg");
+}
+
+.image:nth-child(2) {
+    background-image: url("./assets/2.jpg");
+}
+
+.image:nth-child(3) {
+    background-image: url("./assets/3.jpg");
+}
+
+.image:nth-child(4) {
+    background-image: url("./assets/4.jpg");
+}
+
+.image:nth-child(5) {
+    background-image: url("./assets/5.jpg");
+}
+
+.content {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 10vh 10vh;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: kek;
+    src: url("assets/HelveticaNeueCyr-Roman.ttf") format('embedded-opentype'),
+    url("assets/HelveticaNeueCyr-Roman.ttf") format('woff'),
+    url("assets/HelveticaNeueCyr-Roman.ttf") format('truetype'),
+    url("assets/HelveticaNeueCyr-Roman.ttf") format('svg'),
+    url("assets/HelveticaNeueCyr-Roman.ttf") format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2 {
+    display: flex;
+    align-items: baseline;
+    height: 40px;
+    font-family: kek;
+    font-size: 40px;
+    margin: 0;
+}
+
+img {
+    height: 50px;
+    width: auto;
+}
+
+a {
+    height: 50px;
+    width: auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons a:nth-child(2) {
+    margin: 0 10px;
+}
+@media (max-device-width : 790px) {
+    .content{
+        padding: 0 5vh 5vh;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .content h1{
+        height: 100px;
+        font-size: 100px;
+        margin-bottom: 30px;
+    }
+    .buttons a:nth-child(2){
+        margin: 0 100px;
+    }
+    .buttons a,img{
+        height: 150px;
+    }
+
+}
