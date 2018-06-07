@@ -1,6 +1,9 @@
-for (let i = 1; i < document.getElementsByClassName('image').length; i++) {
+for (let i = 0; i < document.getElementsByClassName('image').length; i++) {
     document.getElementsByClassName('image')[i].style.opacity = '0';
 }
+setTimeout(() => {
+    document.getElementsByClassName('image')[0].style.opacity = '1';
+}, 100);
 let counter = 0;
 setInterval(() => {
         counter++;
