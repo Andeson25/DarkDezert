@@ -1,7 +1,5 @@
 setTimeout(() => {
     document.getElementsByClassName('content')[0].style.opacity='1';
-
-
     document.getElementsByClassName('image')[0].style.opacity = '1';
     let counter = 0;
     setInterval(() => {
