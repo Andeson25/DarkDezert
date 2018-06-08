@@ -90,6 +90,9 @@ a {
     margin: 0 10px;
 }
 @media (max-device-width : 790px) {
+    .image{
+        background-position: center center;
+    }
     .content{
         padding: 0 5vh 5vh;
         flex-direction: column;
