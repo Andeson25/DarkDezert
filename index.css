@@ -91,12 +91,20 @@ a {
 }
 @media (max-device-width : 790px) {
     .image{
+        height: 100%
+    }
+    .image-wrap{
+        position: relative;
+        height: 50vh;
+    }
+    .image{
         background-position: center center;
     }
-    .content{
-        padding: 0 5vh 5vh;
+    #content{
+        height: 50vh;
+        padding: 0 ;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
     }
     .content h1{
