@@ -46,7 +46,7 @@ html, body {
     color: white;
     display: flex;
     align-items: flex-end;
-    padding: 0 10vh 10vh;
+    padding: 0 10vh 0;
     justify-content: space-between;
     box-sizing: border-box;
 }
@@ -65,10 +65,14 @@ html, body {
 h1, h2 {
     display: flex;
     align-items: baseline;
-    height: 40px;
+    height: 200px;
     font-family: kek;
     font-size: 40px;
     margin: 0;
+    margin-left: -85px;
+}
+h1 img{
+    height: 100%
 }
 
 img {
@@ -80,8 +84,16 @@ a {
     height: 50px;
     width: auto;
 }
+a:hover{
+
+    transition: all .2s linear;
+    transform: scale(1.2);
+    filter: invert(100%);
+    opacity: 1;
+}
 
 .buttons {
+    margin-bottom: 75px;
     display: flex;
     justify-content: space-around;
 }
@@ -89,15 +101,20 @@ a {
 .buttons a:nth-child(2) {
     margin: 0 10px;
 }
+
 @media (max-device-width : 790px) {
     .image{
-        height: 100%
+        height: 100%;
     }
     .image-wrap{
         position: relative;
         height: 50vh;
     }
     .image{
+
+        /* background-size: contain; */
+        background-size: cover;
+        /* background-position: top; */
         background-position: center center;
     }
     #content{
@@ -107,16 +124,22 @@ a {
         justify-content: center;
         align-items: center;
     }
+    h1 img{
+        width: 100%;
+        height: auto;
+    }
     .content h1{
-        height: 100px;
+        margin: 0;
+        width: 100vw;
+        height: auto;
         font-size: 100px;
-        margin-bottom: 30px;
     }
     .buttons a:nth-child(2){
         margin: 0 100px;
     }
+
     .buttons a,img{
-        height: 150px;
+        min-height: 150px;
     }
 
 }
