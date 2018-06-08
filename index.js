@@ -4,7 +4,7 @@ setTimeout(() => {
     let counter = 0;
     setInterval(() => {
         counter++;
-        if (counter === 5) {
+        if (counter === document.getElementsByClassName('image').length) {
             document.getElementsByClassName('image')[4].style.opacity = '0';
             document.getElementsByClassName('image')[0].style.opacity = '1';
             counter = 0;
