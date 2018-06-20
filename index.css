@@ -88,6 +88,7 @@ img {
 }
 
 a {
+    outline: none;
     height: 50px;
     width: auto;
 }
