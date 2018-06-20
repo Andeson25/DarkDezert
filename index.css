@@ -64,12 +64,19 @@ html, body {
 
 h1, h2 {
     display: flex;
-    align-items: baseline;
+    box-sizing: border-box;
     height: 200px;
     font-family: kek;
     font-size: 40px;
     margin: 0;
-    margin-left: -85px;
+}
+h1{
+    height: 122px;
+    margin-bottom: 75px;
+    width: auto;
+}
+h1 img{
+    position: static;
 }
 h1 img{
     height: 100%
@@ -95,11 +102,23 @@ a:hover{
 .buttons {
     margin-bottom: 75px;
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .buttons a:nth-child(2) {
-    margin: 0 10px;
+    margin: 0 5px 0 10px;
+}
+.buttons a:nth-child(3) {
+    margin: 0 10px 0 5px;
+}
+.buttons h2{
+    font-family: kek;
+    line-height: 24px;
+    margin: 10px auto 0;
+    font-size: 18px;
+    height: auto;
 }
 
 @media (max-device-width : 790px) {
@@ -126,20 +145,30 @@ a:hover{
     }
     h1 img{
         width: 100%;
-        height: auto;
+    }
+    .buttons{
+        margin-top: 85px;
     }
     .content h1{
-        margin: 0;
-        width: 100vw;
+        margin: 0 auto;
+        width: 50vw;
         height: auto;
-        font-size: 100px;
     }
-    .buttons a:nth-child(2){
-        margin: 0 100px;
+    .buttons a:nth-child(2) {
+        margin: 0 10px 0 20px;
+    }
+    .buttons a:nth-child(3) {
+        margin: 0 20px 0 10px;
+    }
+    h2{
+        height: auto!important;
+        line-height: 50px!important;
+        margin-top: 30px!important;
+        font-size: 50px!important;
     }
 
     .buttons a,img{
-        min-height: 150px;
+        min-height: 130px;
     }
 
 }
