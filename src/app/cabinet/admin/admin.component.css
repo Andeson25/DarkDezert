@@ -1,0 +1,93 @@
+* {
+  font-family: kek;
+}
+
+input {
+  width: 250px;
+  margin: 10px 10px;
+  padding: 5px 10px;
+
+  font-size: 14px;
+  line-height: 18px;
+}
+
+button {
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 24px;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: white;
+  border: 0;
+  color: black;
+}
+
+form {
+  text-align: center;
+  margin: 50px auto 0;
+  color: white !important;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+
+}
+
+img {
+  margin: 10px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: kek;
+  src: url("../../../assets/HelveticaNeueCyr-Roman.ttf") format('embedded-opentype'),
+  url("../../../assets/HelveticaNeueCyr-Roman.ttf") format('woff'),
+  url("../../../assets/HelveticaNeueCyr-Roman.ttf") format('truetype'),
+  url("../../../assets/HelveticaNeueCyr-Roman.ttf") format('svg'),
+  url("../../../assets/HelveticaNeueCyr-Roman.ttf") format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+label{
+  background-color: #ffffff;
+  font-size: 24px;
+  line-height: 24px;
+  padding: 10px 20px;
+  color: #000;
+  cursor: pointer;
+}
+h3 {
+  margin: 0 10px;
+  font-size: 14px;
+  color: white;
+  line-height: 18px;
+}
+
+.image-wrapper {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.updates {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,42 @@
+<div class="wrapper">
+  <button (click)="logOut()">Log out</button>
+  <div class="updates">
+    <div class="input-wrapper">
+      <h3>Phone</h3>
+      <input type="text" placeholder="Phone" [(ngModel)]="phone.phone">
+    </div>
+    <div class="input-wrapper">
+      <h3>Email</h3>
+      <input type="text" placeholder="Email" [(ngModel)]="email.email">
+    </div>
+    <div class="links">
+      <div class="input-wrapper">
+        <h3>Youtube</h3>
+        <input type="text" placeholder="Youtube" [(ngModel)]="links.youtube">
+      </div>
+      <div class="input-wrapper">
+        <h3>Facebook</h3>
+        <input type="text" placeholder="Facebook" [(ngModel)]="links.facebook">
+      </div>
+      <div class="input-wrapper">
+        <h3>Instagram</h3>
+        <input type="text" placeholder="Instagram" [(ngModel)]="links.instagram">
+      </div>
+      <div class="input-wrapper">
+        <h3>Soundcloud</h3>
+        <input type="text" placeholder="Soundcloud" [(ngModel)]="links.soundcloud">
+      </div>
+    </div>
+  </div>
+  <button (click)="update()">Update</button>
+
+  <form action="">
+    <input type="file" id="file" style="display: none" (change)="upload($event)">
+    <label for="file">Add photo</label>
+  </form>
+
+  <div class="image-wrapper">
+    <img style="max-height: 200px; margin-right: 10px;" *ngFor="let one of img" [src]="one.path" [alt]="one.name"
+         (click)="delete(one)">
+  </div>
+</div>

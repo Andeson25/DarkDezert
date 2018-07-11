@@ -1,0 +1,12 @@
+<div class="wrapper">
+<form (submit)="login(em.value,pass.value)">
+  <input type="text" placeholder="email" #em>
+  <input type="password" placeholder="pass" #pass>
+  <button type="submit">log in</button>
+</form>
+<h3 *ngIf="showError" style="color: red">
+  bad email or password
+</h3>
+</div>
+
+
